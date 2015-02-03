@@ -1,0 +1,13 @@
+;; mystream.setup
+
+;;; コンパイル  => mystream.so
+(compile -s -O3 -d1 "mystream.scm" -j mystream)
+(compile -s -O3 -d0 "mystream.import.scm")
+;;; インストール
+(install-extension
+ 'mystream
+ '("mystream.so" "mystream.import.so")
+ '((version 1.0)))
+
+
+

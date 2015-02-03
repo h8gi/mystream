@@ -1,0 +1,6 @@
+;;; mystream.meta
+
+((author "yagi hiroki")
+ (synopsis "A stream utils")
+ (license "GPLv3")
+ (files "mystream.scm" "mystream.setup"))
